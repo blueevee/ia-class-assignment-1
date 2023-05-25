@@ -5,33 +5,25 @@ import time
 import tracemalloc
 
 
-# Iniciando tracking de mémoria
 tracemalloc.start()
 
-# Iniciando tracking de tempo
 start_time = time.time()
 
 # Crie o caminho do arquivo no formato Posix
-file_path = os.path.join(os.getcwd(), 'knowledge_base.pl')
+file_path = os.path.join(os.getcwd(), 'maps/map1.pl')
 posix_file_path = posixpath.join(*file_path.split(os.sep))
+rule_file_path = os.path.join(os.getcwd(), 'utils/knowledge_base_rules.pl')
+rules_posix_file_path = posixpath.join(*rule_file_path.split(os.sep))
 
-# Inicie o PrologMQI e crie uma instância do PrologThread
 with PrologMQI() as mqi:
     with mqi.create_thread() as prolog_thread:
         # Carregue a base de conhecimento usando o predicado consult/1 do Prolog
-        query = f"consult('{posix_file_path}')"
+        query = f"consult(['{posix_file_path}', '{rules_posix_file_path}'])"
         result = prolog_thread.query(query)
-        
-        # Consulte a distância entre duas cidades usando o predicado distancia/3
-        # city_1 = 'porto_velho'
-        # city_2 = 'rio_branco'
-        # query = f"nivelrisco({city_1}, {city_2}, Risco)"
-        # result = prolog_thread.query(query)
-        # print(result)
 
         # Encontre o melhor trajeto entre duas cidades usando o predicado melhor_trajeto/4
-        cidade_inicial = 'rio_de_janeiro'
-        cidade_final = 'salvador'
+        cidade_inicial = 'rio_branco'
+        cidade_final = 'manaus'
         preferencia = 'mais_rapido'
         query = f"melhor_trajeto_bfs({cidade_inicial}, {cidade_final}, {preferencia}, Caminho)"
         result = prolog_thread.query(query)
