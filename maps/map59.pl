@@ -1,52 +1,55 @@
-aresta(joao_pessoa, porto_velho, 243, 61, 1, 3.98).
-aresta(cuiaba, campo_grande, 545, 115, 2, 4.74).
-aresta(joao_pessoa, campo_grande, 482, 110, 1, 4.38).
-aresta(brasilia, manaus, 1170, 95, 3, 12.32).
-aresta(salvador, palmas, 1960, 100, 4, 19.6).
-aresta(natal, manaus, 1745, 105, 1, 16.62).
-aresta(brasilia, aracaju, 1354, 71, 4, 19.07).
-aresta(sao_paulo, salvador, 577, 61, 3, 9.46).
-aresta(joao_pessoa, maceio, 733, 94, 1, 7.8).
-aresta(salvador, rio_de_janeiro, 745, 107, 1, 6.96).
-aresta(sao_paulo, goiania, 658, 88, 2, 7.48).
-aresta(recife, joao_pessoa, 713, 82, 4, 8.7).
-aresta(fortaleza, manaus, 885, 75, 2, 11.8).
-aresta(porto_velho, cuiaba, 1739, 87, 1, 19.99).
-aresta(goiania, maceio, 1093, 78, 1, 14.01).
-aresta(maceio, brasilia, 793, 66, 5, 12.02).
-aresta(brasilia, rio_de_janeiro, 1836, 90, 5, 20.4).
-aresta(recife, salvador, 593, 75, 3, 7.91).
-aresta(aracaju, sao_paulo, 1436, 102, 3, 14.08).
-aresta(sao_paulo, aracaju, 1129, 94, 2, 12.01).
-aresta(joao_pessoa, porto_velho, 1639, 91, 3, 18.01).
-aresta(palmas, maceio, 1935, 89, 2, 21.74).
-aresta(brasilia, sao_paulo, 198, 72, 1, 2.75).
-aresta(campo_grande, joao_pessoa, 1285, 83, 1, 15.48).
-aresta(maceio, joao_pessoa, 164, 110, 1, 1.49).
-aresta(fortaleza, natal, 553, 61, 4, 9.07).
-aresta(goiania, natal, 938, 67, 5, 14.0).
-aresta(porto_velho, salvador, 423, 79, 2, 5.35).
-aresta(brasilia, maceio, 1850, 67, 2, 27.61).
-aresta(sao_paulo, goiania, 403, 76, 1, 5.3).
-aresta(sao_paulo, recife, 646, 72, 5, 8.97).
-aresta(cuiaba, manaus, 505, 91, 3, 5.55).
-aresta(palmas, rio_de_janeiro, 1342, 102, 4, 13.16).
-aresta(natal, maceio, 1247, 76, 2, 16.41).
+aresta(manaus, brasilia, 414, 77, 4, 5.38).
+aresta(fortaleza, recife, 504, 73, 2, 6.9).
+aresta(joao_pessoa, sao_paulo, 529, 81, 5, 6.53).
+aresta(belo_horizonte, sao_paulo, 267, 60, 1, 4.45).
+aresta(manaus, fortaleza, 1842, 113, 5, 16.3).
+aresta(goiania, salvador, 1288, 90, 3, 14.31).
+aresta(fortaleza, recife, 1768, 89, 1, 19.87).
+aresta(manaus, maceio, 934, 63, 5, 14.83).
+aresta(fortaleza, porto_velho, 624, 69, 2, 9.04).
+aresta(fortaleza, natal, 430, 108, 2, 3.98).
+aresta(salvador, manaus, 1510, 103, 5, 14.66).
+aresta(recife, rio_branco, 1042, 103, 1, 10.12).
+aresta(salvador, natal, 1174, 106, 4, 11.08).
+aresta(goiania, joao_pessoa, 709, 63, 4, 11.25).
+aresta(recife, rio_de_janeiro, 108, 111, 3, 0.97).
+aresta(campo_grande, goiania, 391, 77, 2, 5.08).
+aresta(fortaleza, aracaju, 879, 113, 1, 7.78).
+aresta(belo_horizonte, goiania, 1882, 80, 2, 23.52).
+aresta(campo_grande, salvador, 265, 81, 2, 3.27).
+aresta(sao_paulo, porto_velho, 488, 67, 4, 7.28).
+aresta(cuiaba, belo_horizonte, 489, 120, 5, 4.08).
+aresta(palmas, sao_paulo, 482, 96, 4, 5.02).
+aresta(manaus, recife, 1885, 77, 1, 24.48).
+aresta(brasilia, salvador, 590, 69, 2, 8.55).
+aresta(palmas, salvador, 1972, 113, 5, 17.45).
+aresta(rio_de_janeiro, brasilia, 1768, 75, 2, 23.57).
+aresta(maceio, joao_pessoa, 1792, 84, 2, 21.33).
+aresta(natal, palmas, 1721, 92, 3, 18.71).
+aresta(recife, maceio, 1305, 66, 3, 19.77).
+aresta(aracaju, rio_de_janeiro, 1290, 95, 5, 13.58).
+aresta(brasilia, joao_pessoa, 1836, 72, 4, 25.5).
+aresta(joao_pessoa, rio_branco, 1878, 113, 4, 16.62).
+aresta(palmas, cuiaba, 180, 83, 4, 2.17).
+aresta(maceio, campo_grande, 1923, 63, 3, 30.52).
+aresta(sao_paulo, fortaleza, 372, 80, 4, 4.65).
+aresta(recife, goiania, 918, 100, 3, 9.18).
 
-coordenadas(porto_velho, 64.92422864286962, -108.06668626666254).
-coordenadas(cuiaba, -74.01385362313334, 23.303448977984345).
-coordenadas(manaus, 31.093317784281183, -49.287372234364284).
-coordenadas(maceio, 70.68321746814743, 54.01107451127368).
-coordenadas(fortaleza, 33.313215885603924, -10.723510936944166).
-coordenadas(salvador, -68.52486478656493, 147.8155074489469).
-coordenadas(brasilia, -49.810043476627875, -164.3072009302979).
-coordenadas(joao_pessoa, 17.21567575541711, 73.76539430856846).
-coordenadas(rio_branco, 8.846486640735662, 82.30371294177479).
-coordenadas(rio_de_janeiro, 20.11650810731315, 18.723110537403613).
-coordenadas(recife, -87.64119171168866, 52.144942205246224).
-coordenadas(sao_paulo, 37.148985919836434, -39.74109260056346).
-coordenadas(aracaju, 76.05866129787779, 2.416602374442931).
-coordenadas(palmas, -5.767567198487413, -169.46878873708192).
-coordenadas(natal, -66.83389305137624, 23.407780651274436).
-coordenadas(campo_grande, 61.15501409435245, 150.31901072206972).
-coordenadas(goiania, 39.68409058531864, 139.69780674944934).
+coordenadas(cuiaba, 24.09481083172267, 0.18537554696465008).
+coordenadas(goiania, -81.82214058262544, 159.08907491084267).
+coordenadas(campo_grande, 51.80644853345851, -88.7331960122532).
+coordenadas(rio_de_janeiro, -0.18316313808328744, 104.4683110634254).
+coordenadas(brasilia, 87.57343790829793, 105.65037212806862).
+coordenadas(fortaleza, -17.418165235083592, -19.197023601050176).
+coordenadas(aracaju, 59.78730636538404, 25.559679087075494).
+coordenadas(palmas, -19.456700257990562, -161.62040399702224).
+coordenadas(salvador, -88.61322264296393, -165.11029446264897).
+coordenadas(belo_horizonte, 1.775166684226761, 163.6749944841947).
+coordenadas(joao_pessoa, 21.710977462078603, -97.69759277926745).
+coordenadas(sao_paulo, 52.264082531681595, -124.20954090624764).
+coordenadas(maceio, -36.33888362809454, -120.44597206370574).
+coordenadas(natal, -22.777889985462267, -143.42701328759023).
+coordenadas(rio_branco, 77.64238380348678, 55.91624538425032).
+coordenadas(manaus, 76.15703065829595, -38.96064747923603).
+coordenadas(recife, -8.093443524588594, 77.77346846077319).
+coordenadas(porto_velho, 13.764099685816518, -106.29039687451198).

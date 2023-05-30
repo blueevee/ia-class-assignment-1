@@ -12,7 +12,7 @@ def exec_best_path(i, alg, initial_city, final_city, path_choice):
     best_result = result[0]['Caminho'] if result else result
     result_len = len(result[0]['Caminho']) if result else 0
 
-    return result, best_result, result_len
+    return best_result, result_len
     
 
 
@@ -39,13 +39,15 @@ def hundred_maps(alg, uber_city, passenger_city, destiny_city, path_choice):
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['File', 'Current Memory (MB)', 'Peak Memory (MB)', 'Elapsed Time (seconds)', 'Result Length', 'Result'])
 
-    for i in range(1, 101):
+    for i in range(1, 5):
         start_time = time.time()
         
-        toPassengerResult, toPassengerBestResult, toPassengerResultLen = exec_best_path(i, alg, uber_city, passenger_city, Preference.FAST.value)
-        toDestinyResult, toDestinyBestResult, toDestinyResultLen = exec_best_path(i, alg, passenger_city, destiny_city, path_choice)
+        toPassengerBestResult, toPassengerResultLen = exec_best_path(i, alg, uber_city, passenger_city, Preference.FAST.value)
+        toDestinyBestResult, toDestinyResultLen = exec_best_path(i, alg, passenger_city, destiny_city, path_choice)
         
-        finalBestResult = toPassengerBestResult + toDestinyBestResult
+        passenger = toPassengerBestResult if toPassengerBestResult else []
+        destiny = toDestinyBestResult if toDestinyBestResult else []
+        finalBestResult = passenger + destiny
         finalResultLen = toPassengerResultLen + toDestinyResultLen        
 
         current_memory, peak_memory = tracemalloc.get_traced_memory()

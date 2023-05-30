@@ -25,7 +25,7 @@ cities = [
 def selectCities(citiesArray):
     random.shuffle(citiesArray)
 
-    maxCities = len(citiesArray) - random.randint(0, 4) # de 0 a 4 elementos a menos para não deixar o mapa pequeno demais
+    maxCities = len(citiesArray) # - random.randint(0, 4) # de 0 a 4 elementos a menos para não deixar o mapa pequeno demais
     selectedCities = citiesArray[0:maxCities]
 
     return selectedCities
