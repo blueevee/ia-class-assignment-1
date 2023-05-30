@@ -23,7 +23,11 @@ cities = [
 ]
 
 def generate_random_data():
-    return random.randint(100, 2000), random.randint(60, 120), random.randint(1, 5)
+    distance, vel, risk = random.randint(100, 2000), random.randint(60, 120), random.randint(1, 5)
+
+    timeElapsed = round(distance / vel, 2)
+
+    return distance, vel, risk, timeElapsed
 
 def generate_random_cities(connected_cities):
     city1 = random.choice(cities)
@@ -53,8 +57,8 @@ for i in range(1, 101):
     with open(path_file, "w") as f:
         for _ in range(len(cities)):
             initial_city, final_city = generate_random_cities(connected_cities)
-            distance, max_speed, risk_level = generate_random_data()
-            f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}).\n")
+            distance, max_speed, risk_level, timeElapsed = generate_random_data()
+            f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}, {timeElapsed}).\n")
             
             if initial_city in connected_cities:
                 connected_cities[initial_city].add(final_city)

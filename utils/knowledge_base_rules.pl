@@ -1,18 +1,22 @@
 conectado(Cidade1,Cidade2) :- 
-	aresta(Cidade1,Cidade2,_,_,_); 
-	aresta(Cidade2,Cidade1,_,_,_).
+	aresta(Cidade1,Cidade2,_,_,_,_); 
+	aresta(Cidade2,Cidade1,_,_,_,_).
 
 distancia(Cidade1,Cidade2,D) :- 
-	aresta(Cidade1,Cidade2,D,_,_); 
-	aresta(Cidade2,Cidade1,D,_,_).
+	aresta(Cidade1,Cidade2,D,_,_,_); 
+	aresta(Cidade2,Cidade1,D,_,_,_).
 
 velocidademaxima(Cidade1,Cidade2,V) :- 
-	aresta(Cidade1,Cidade2,_,V,_); 
-	aresta(Cidade2,Cidade1,_,V,_).
+	aresta(Cidade1,Cidade2,_,V,_,_); 
+	aresta(Cidade2,Cidade1,_,V,_,_).
 
 nivelrisco(Cidade1,Cidade2,N) :- 
-	aresta(Cidade1,Cidade2,_,_,N); 
-	aresta(Cidade2,Cidade1,_,_,N).
+	aresta(Cidade1,Cidade2,_,_,N,_); 
+	aresta(Cidade2,Cidade1,_,_,N,_).
+
+tempoViagem(Cidade1,Cidade2,T) :- 
+	aresta(Cidade1,Cidade2,_,_,_,T); 
+	aresta(Cidade2,Cidade1,_,_,_,T).
 
 
 % #  Encontra o caminho mais curto ou mais seguro entre duas cidades usando busca em largura
@@ -36,7 +40,7 @@ expandir([CidadeAtual|Caminho], Preferencia, NovosCaminhos) :-
     ).
 
 % # Define o critério para expandir o caminho com base na preferência do usuário
-criterio_bfs(mais_rapido, Cidade1, Cidade2) :- velocidademaxima(Cidade1,Cidade2,_).
+criterio_bfs(mais_rapido, Cidade1, Cidade2) :- tempoViagem(Cidade1,Cidade2,_).
 criterio_bfs(mais_seguro, Cidade1, Cidade2) :- nivelrisco(Cidade1,Cidade2,N), N =< 3.
 
 % # Encontra o melhor trajeto entre duas cidades usando o algoritmo A*
@@ -106,7 +110,7 @@ dfs(CidadeAtual, CidadeFinal, CaminhoAtual, Preferencia, Caminho) :-
     dfs(ProximaCidade, CidadeFinal, [ProximaCidade|CaminhoAtual], Preferencia, Caminho).
 
 % # Define o critério para expandir o caminho com base na preferência do usuário
-criterio_dfs(mais_rapido, Cidade1, Cidade2) :- velocidademaxima(Cidade1,Cidade2,_).
+criterio_dfs(mais_rapido, Cidade1, Cidade2) :- tempoViagem(Cidade1,Cidade2,_).
 criterio_dfs(mais_seguro, Cidade1, Cidade2) :- nivelrisco(Cidade1,Cidade2,N), N =< 3.
 
 % # Encontra o melhor trajeto entre duas cidades usando o algoritmo de busca gulosa
@@ -136,7 +140,7 @@ expandir_greedy([_,[CidadeAtual|Caminho]], CidadeFinal, Preferencia, NovosCaminh
     ).
 
 % # Define o critério para expandir o caminho com base na preferência do usuário
-criterio_greedy(mais_rapido, Cidade1, Cidade2) :- velocidademaxima(Cidade1,Cidade2,_).
+criterio_greedy(mais_rapido, Cidade1, Cidade2) :- tempoViagem(Cidade1,Cidade2,_).
 criterio_greedy(mais_seguro, Cidade1, Cidade2) :- nivelrisco(Cidade1,Cidade2,N), N =< 3.
 
 % # Define a função heurística para estimar o custo restante até a cidade final
