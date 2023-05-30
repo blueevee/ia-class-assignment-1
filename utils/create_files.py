@@ -22,6 +22,14 @@ cities = [
     "rio_branco"
 ]
 
+def selectCities(citiesArray):
+    random.shuffle(citiesArray)
+
+    maxCities = len(citiesArray) - random.randint(0, 4) # de 0 a 4 elementos a menos para não deixar o mapa pequeno demais
+    selectedCities = citiesArray[0:maxCities]
+
+    return selectedCities
+
 def generate_random_data():
     distance, vel, risk = random.randint(100, 2000), random.randint(60, 120), random.randint(1, 5)
 
@@ -29,15 +37,15 @@ def generate_random_data():
 
     return distance, vel, risk, timeElapsed
 
-def generate_random_cities(connected_cities):
-    city1 = random.choice(cities)
-    city2 = random.choice(cities)
+def generate_connection(totalCities, connected_cities):
+    city1 = random.choice(totalCities)
+    city2 = random.choice(totalCities)
 
-    while city1 in connected_cities and len(connected_cities[city1]) == len(cities) - 1:
-        city1 = random.choice(cities)
+    while city1 in connected_cities and len(connected_cities[city1]) == len(totalCities) - 1:
+        city1 = random.choice(totalCities)
 
     while city2 == city1:
-        city2 = random.choice(cities)
+        city2 = random.choice(totalCities)
 
     return city1, city2
 
@@ -52,11 +60,12 @@ if not os.path.exists(diretorio):
 for i in range(1, 101):
     file_name = f"map{i}.pl"
     path_file = os.path.join(diretorio, file_name)
-    connected_cities = {} 
+    totalCities = selectCities(cities.copy())
+    connected_cities = {}
     
     with open(path_file, "w") as f:
-        for _ in range(len(cities)):
-            initial_city, final_city = generate_random_cities(connected_cities)
+        for _ in range(len(totalCities) * 2):
+            initial_city, final_city = generate_connection(totalCities, connected_cities)
             distance, max_speed, risk_level, timeElapsed = generate_random_data()
             f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}, {timeElapsed}).\n")
             
@@ -66,7 +75,7 @@ for i in range(1, 101):
                 connected_cities[initial_city] = {final_city}
                 
         f.write("\n")
-        for cidade in cities:
+        for cidade in totalCities:
             latitude, longitude = generate_random_coordinates()
             f.write(f"coordenadas({cidade}, {latitude}, {longitude}).\n")
 

@@ -1,37 +1,43 @@
-aresta(campo_grande, brasilia, 773, 77, 3, 10.04).
-aresta(fortaleza, aracaju, 1602, 71, 5, 22.56).
-aresta(natal, salvador, 589, 80, 4, 7.36).
-aresta(cuiaba, belo_horizonte, 234, 87, 5, 2.69).
-aresta(natal, aracaju, 1069, 119, 1, 8.98).
-aresta(manaus, sao_paulo, 1068, 120, 4, 8.9).
-aresta(sao_paulo, recife, 1232, 108, 2, 11.41).
-aresta(rio_branco, manaus, 1839, 62, 4, 29.66).
-aresta(maceio, sao_paulo, 550, 79, 1, 6.96).
-aresta(rio_branco, manaus, 1830, 99, 1, 18.48).
-aresta(brasilia, palmas, 422, 61, 4, 6.92).
-aresta(cuiaba, brasilia, 353, 100, 2, 3.53).
-aresta(salvador, goiania, 1013, 79, 5, 12.82).
-aresta(belo_horizonte, rio_branco, 1022, 106, 2, 9.64).
-aresta(cuiaba, manaus, 1943, 60, 4, 32.38).
-aresta(salvador, goiania, 1859, 107, 2, 17.37).
-aresta(porto_velho, rio_branco, 1544, 68, 2, 22.71).
-aresta(recife, brasilia, 309, 64, 1, 4.83).
+aresta(maceio, rio_de_janeiro, 733, 114, 5, 6.43).
+aresta(belo_horizonte, fortaleza, 1199, 95, 1, 12.62).
+aresta(porto_velho, maceio, 1377, 83, 1, 16.59).
+aresta(palmas, aracaju, 177, 120, 2, 1.48).
+aresta(fortaleza, goiania, 1518, 110, 1, 13.8).
+aresta(porto_velho, cuiaba, 445, 101, 1, 4.41).
+aresta(fortaleza, porto_velho, 1526, 95, 4, 16.06).
+aresta(goiania, maceio, 1426, 120, 4, 11.88).
+aresta(goiania, palmas, 776, 66, 4, 11.76).
+aresta(maceio, fortaleza, 880, 73, 3, 12.05).
+aresta(fortaleza, rio_de_janeiro, 784, 85, 1, 9.22).
+aresta(recife, aracaju, 927, 87, 2, 10.66).
+aresta(rio_branco, natal, 1885, 71, 2, 26.55).
+aresta(belo_horizonte, rio_de_janeiro, 372, 116, 2, 3.21).
+aresta(cuiaba, palmas, 1779, 88, 1, 20.22).
+aresta(rio_branco, natal, 1712, 109, 3, 15.71).
+aresta(recife, natal, 196, 113, 1, 1.73).
+aresta(palmas, rio_branco, 1041, 92, 1, 11.32).
+aresta(salvador, maceio, 730, 71, 3, 10.28).
+aresta(brasilia, natal, 1563, 71, 3, 22.01).
+aresta(salvador, maceio, 1346, 79, 3, 17.04).
+aresta(maceio, brasilia, 1376, 96, 1, 14.33).
+aresta(goiania, palmas, 806, 99, 2, 8.14).
+aresta(natal, cuiaba, 1236, 110, 1, 11.24).
+aresta(rio_de_janeiro, natal, 317, 78, 5, 4.06).
+aresta(palmas, goiania, 1391, 81, 4, 17.17).
+aresta(rio_branco, cuiaba, 134, 88, 2, 1.52).
+aresta(natal, belo_horizonte, 861, 93, 3, 9.26).
 
-coordenadas(rio_de_janeiro, 45.756271197038416, -37.54410463187611).
-coordenadas(sao_paulo, -64.10545708866147, 112.63990093966316).
-coordenadas(belo_horizonte, 54.912773667035594, 111.60621515672415).
-coordenadas(salvador, 66.76252577914607, 36.635803935331296).
-coordenadas(fortaleza, 71.60301998232552, -125.20438779327539).
-coordenadas(recife, 34.25400264050019, 166.53326584388026).
-coordenadas(natal, 83.51134045917476, -21.978985211045085).
-coordenadas(joao_pessoa, 58.68579379390712, 105.22252959014997).
-coordenadas(maceio, -84.38332755737282, 166.04771875635817).
-coordenadas(aracaju, 73.93284707975155, 7.780459896597961).
-coordenadas(brasilia, 9.561442656822038, 55.486126012248036).
-coordenadas(cuiaba, -2.0318671281358576, -17.81359424435726).
-coordenadas(campo_grande, 88.01532180409117, -111.01598678147687).
-coordenadas(goiania, -17.595000785835623, 19.41999925338027).
-coordenadas(palmas, -32.57658718897299, -19.426288427314915).
-coordenadas(manaus, -87.29057743173767, -24.91481258567549).
-coordenadas(porto_velho, -86.34491601825286, 56.62497491626317).
-coordenadas(rio_branco, 29.153972824779387, 170.67414496429814).
+coordenadas(salvador, 88.91168474359276, 30.486212595659225).
+coordenadas(fortaleza, 42.46480863567487, 125.46226098114869).
+coordenadas(natal, -26.544413078405455, -57.51522294847406).
+coordenadas(cuiaba, 49.66224650857353, -81.96506605466394).
+coordenadas(rio_de_janeiro, 61.156340711190495, 33.22027022522121).
+coordenadas(aracaju, 59.58691731313709, -145.54075431818427).
+coordenadas(recife, -6.137743816910515, 68.80843302454099).
+coordenadas(porto_velho, 39.022874579273065, -42.99946521839402).
+coordenadas(belo_horizonte, 28.096994829372193, -130.35154880934533).
+coordenadas(goiania, -8.370666982503963, -17.804611563270385).
+coordenadas(palmas, -12.884162076943653, 143.3870593027042).
+coordenadas(maceio, 29.897768965743836, 175.8006724439303).
+coordenadas(brasilia, 88.41971646864627, -51.30719017403962).
+coordenadas(rio_branco, 56.87321008946182, 141.42032436546572).
