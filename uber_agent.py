@@ -39,7 +39,7 @@ def hundred_maps(alg, uber_city, passenger_city, destiny_city, path_choice):
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['File', 'Current Memory (MB)', 'Peak Memory (MB)', 'Elapsed Time (seconds)', 'Result Length', 'Result'])
 
-    for i in range(1, 5):
+    for i in range(1, 101):
         start_time = time.time()
         
         toPassengerBestResult, toPassengerResultLen = exec_best_path(i, alg, uber_city, passenger_city, Preference.FAST.value)
