@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 aresta(belo_horizonte, natal, 1370, 105, 5).
 aresta(recife, manaus, 770, 62, 3).
 aresta(campo_grande, fortaleza, 1356, 82, 1).
@@ -53,3 +54,54 @@ coordenadas(palmas, -26.360539635994435, 37.868663637041266).
 coordenadas(manaus, -9.13283211007284, 39.90839854149243).
 coordenadas(porto_velho, -67.25254127319363, 79.29334608214458).
 coordenadas(rio_branco, 48.32012723454423, 100.80479467777229).
+=======
+aresta(fortaleza, palmas, 1737, 61, 5, 28.48).
+aresta(palmas, rio_branco, 376, 114, 2, 3.3).
+aresta(goiania, natal, 263, 106, 1, 2.48).
+aresta(aracaju, recife, 1755, 105, 1, 16.71).
+aresta(belo_horizonte, maceio, 1264, 88, 4, 14.36).
+aresta(cuiaba, maceio, 684, 70, 3, 9.77).
+aresta(cuiaba, rio_branco, 1854, 69, 4, 26.87).
+aresta(belo_horizonte, porto_velho, 312, 114, 2, 2.74).
+aresta(porto_velho, salvador, 1657, 63, 3, 26.3).
+aresta(manaus, belo_horizonte, 602, 62, 5, 9.71).
+aresta(sao_paulo, goiania, 1623, 91, 3, 17.84).
+aresta(belo_horizonte, cuiaba, 984, 77, 5, 12.78).
+aresta(cuiaba, rio_branco, 1257, 109, 4, 11.53).
+aresta(natal, recife, 793, 106, 3, 7.48).
+aresta(goiania, manaus, 199, 101, 5, 1.97).
+aresta(natal, aracaju, 1404, 118, 5, 11.9).
+aresta(recife, fortaleza, 181, 89, 3, 2.03).
+aresta(manaus, porto_velho, 1045, 116, 1, 9.01).
+aresta(palmas, goiania, 1427, 117, 3, 12.2).
+aresta(manaus, belo_horizonte, 1634, 79, 2, 20.68).
+aresta(natal, sao_paulo, 1163, 114, 2, 10.2).
+aresta(fortaleza, maceio, 512, 117, 1, 4.38).
+aresta(palmas, manaus, 1178, 80, 3, 14.72).
+aresta(maceio, belo_horizonte, 1607, 89, 3, 18.06).
+aresta(rio_branco, goiania, 1531, 100, 5, 15.31).
+aresta(joao_pessoa, aracaju, 343, 77, 1, 4.45).
+aresta(porto_velho, goiania, 1385, 114, 2, 12.15).
+aresta(goiania, maceio, 1911, 111, 2, 17.22).
+aresta(sao_paulo, aracaju, 312, 89, 4, 3.51).
+aresta(sao_paulo, aracaju, 1019, 100, 5, 10.19).
+aresta(rio_branco, manaus, 1240, 64, 5, 19.38).
+aresta(belo_horizonte, sao_paulo, 455, 81, 3, 5.62).
+
+coordenadas(fortaleza, 53.415804996130305, 29.95765024996456).
+coordenadas(recife, 36.35130222735731, -174.13209330054718).
+coordenadas(goiania, -35.073900153701175, 51.84699045141906).
+coordenadas(aracaju, 73.52725518492153, -164.81072192506934).
+coordenadas(rio_de_janeiro, 9.329044227773963, -176.7552812663563).
+coordenadas(rio_branco, -30.288037303496097, -41.439961629039374).
+coordenadas(joao_pessoa, 86.4512965695281, -95.39322921760154).
+coordenadas(belo_horizonte, -49.45670053431573, -172.3917897425291).
+coordenadas(sao_paulo, 76.67142317351815, -28.632532711026215).
+coordenadas(salvador, 51.27997502050121, 168.43719864397087).
+coordenadas(porto_velho, -85.935013015221, 21.12148290870661).
+coordenadas(manaus, 12.608382985008944, -175.3421097054288).
+coordenadas(cuiaba, -79.82993377695357, -61.04376899110018).
+coordenadas(maceio, -12.287582063492707, -153.70483151993201).
+coordenadas(natal, -56.86177280017128, 45.850507154127655).
+coordenadas(palmas, -61.8585049206238, -57.75104215181604).
+>>>>>>> Stashed changes

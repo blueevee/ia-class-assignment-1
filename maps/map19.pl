@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 aresta(sao_paulo, salvador, 1041, 112, 1).
 aresta(brasilia, manaus, 321, 86, 1).
 aresta(rio_de_janeiro, belo_horizonte, 1621, 94, 5).
@@ -53,3 +54,48 @@ coordenadas(palmas, 47.42861302726624, 79.85422861220098).
 coordenadas(manaus, 32.32985911658315, -101.97479768422114).
 coordenadas(porto_velho, -54.79789740014768, -117.15776371521932).
 coordenadas(rio_branco, -8.217674577142745, -84.79574022608159).
+=======
+aresta(rio_branco, recife, 250, 95, 3, 2.63).
+aresta(sao_paulo, salvador, 1266, 104, 4, 12.17).
+aresta(salvador, manaus, 1708, 115, 1, 14.85).
+aresta(aracaju, palmas, 1638, 83, 4, 19.73).
+aresta(manaus, aracaju, 1450, 65, 1, 22.31).
+aresta(recife, fortaleza, 722, 73, 3, 9.89).
+aresta(rio_branco, manaus, 1178, 111, 3, 10.61).
+aresta(fortaleza, rio_de_janeiro, 1358, 77, 1, 17.64).
+aresta(natal, palmas, 224, 81, 5, 2.77).
+aresta(salvador, belo_horizonte, 1749, 101, 4, 17.32).
+aresta(rio_de_janeiro, manaus, 554, 70, 1, 7.91).
+aresta(belo_horizonte, rio_branco, 1079, 60, 2, 17.98).
+aresta(salvador, manaus, 560, 68, 2, 8.24).
+aresta(cuiaba, rio_branco, 914, 69, 4, 13.25).
+aresta(porto_velho, salvador, 1627, 65, 4, 25.03).
+aresta(cuiaba, fortaleza, 2000, 70, 3, 28.57).
+aresta(palmas, belo_horizonte, 1520, 107, 5, 14.21).
+aresta(campo_grande, belo_horizonte, 519, 86, 4, 6.03).
+aresta(manaus, aracaju, 605, 88, 2, 6.88).
+aresta(recife, aracaju, 1790, 60, 3, 29.83).
+aresta(recife, sao_paulo, 1408, 103, 4, 13.67).
+aresta(salvador, fortaleza, 291, 73, 5, 3.99).
+aresta(natal, fortaleza, 1825, 98, 1, 18.62).
+aresta(aracaju, cuiaba, 377, 105, 3, 3.59).
+aresta(rio_de_janeiro, porto_velho, 1932, 62, 5, 31.16).
+aresta(aracaju, rio_branco, 1003, 78, 5, 12.86).
+aresta(campo_grande, sao_paulo, 395, 93, 4, 4.25).
+aresta(belo_horizonte, recife, 1137, 87, 3, 13.07).
+
+coordenadas(recife, 62.681316481980815, 90.88269424467802).
+coordenadas(rio_branco, 40.11178606784881, -97.51128036283319).
+coordenadas(manaus, 34.681767606235894, 142.43492093703333).
+coordenadas(campo_grande, -80.65186467669822, -62.66628195014813).
+coordenadas(natal, 5.9929187754688655, -30.800626741167775).
+coordenadas(fortaleza, 15.64416442547521, 27.27436360632032).
+coordenadas(salvador, -72.84818290783758, -19.641814035295937).
+coordenadas(rio_de_janeiro, 58.99636641555776, 175.66323638807734).
+coordenadas(cuiaba, 55.75206000715559, 43.869618305766494).
+coordenadas(porto_velho, -1.2792609563188222, 109.9026830619801).
+coordenadas(belo_horizonte, 30.788454525806486, 76.6177339285963).
+coordenadas(aracaju, 72.47203854582708, 80.27054640285814).
+coordenadas(sao_paulo, 16.049214936096604, 131.3904997866298).
+coordenadas(palmas, 59.983202190257316, 94.02023171486559).
+>>>>>>> Stashed changes
