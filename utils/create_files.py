@@ -60,17 +60,10 @@ for i in range(1, 101):
     connected_cities = {}
     
     with open(path_file, "w") as f:
-<<<<<<< Updated upstream
-        for _ in range(len(cities) * 2):
-            initial_city, final_city = generate_random_cities(connected_cities)
-            distance, max_speed, risk_level = generate_random_data()
-            f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}).\n")
-=======
         for _ in range(len(totalCities) * 2):
             initial_city, final_city = generate_connection(totalCities, connected_cities)
             distance, max_speed, risk_level, timeElapsed = generate_random_data()
             f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}, {timeElapsed}).\n")
->>>>>>> Stashed changes
             
             if initial_city in connected_cities:
                 connected_cities[initial_city].add(final_city)
