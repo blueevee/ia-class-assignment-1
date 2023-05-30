@@ -51,7 +51,7 @@ for i in range(1, 101):
     connected_cities = {} 
     
     with open(path_file, "w") as f:
-        for _ in range(len(cities) * 2):
+        for _ in range(len(cities)):
             initial_city, final_city = generate_random_cities(connected_cities)
             distance, max_speed, risk_level = generate_random_data()
             f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}).\n")
