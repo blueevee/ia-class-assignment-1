@@ -29,6 +29,14 @@ expandir_greedy([_,[CidadeAtual|Caminho]], CidadeFinal, Preferencia, NovosCaminh
 criterio_greedy(mais_rapido, Cidade1, Cidade2) :- tempoViagem(Cidade1,Cidade2,_).
 criterio_greedy(mais_seguro, Cidade1, Cidade2) :- nivelrisco(Cidade1,Cidade2,N), N =< 3.
 
+% Adicione um predicado para calcular a distância em linha reta entre duas coordenadas geográficas
+distancia_linha_reta(Lat1, Lon1, Lat2, Lon2, Distancia) :-
+    Dlat is Lat2 - Lat1,
+    Dlon is Lon2 - Lon1,
+    A is sin(Dlat / 2) ** 2 + cos(Lat1) * cos(Lat2) * sin(Dlon / 2) ** 2,
+    C is 2 * atan2(sqrt(A), sqrt(1 - A)),
+    Distancia is 6371 * C.
+
 % Define a função heurística para estimar o custo restante até a cidade final
 heuristica_greedy(mais_rapido, CidadeAtual, CidadeFinal, Heuristica) :-
     coordenadas(CidadeAtual, Lat1, Lon1),
