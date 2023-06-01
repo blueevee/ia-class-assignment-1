@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv('../results_greedy.csv', delimiter=';')
+df = pd.read_csv('../results/greedy/fast/results_greedy.csv')
 
 file = df['File']
 current_memory = df['Current Memory (MB)']

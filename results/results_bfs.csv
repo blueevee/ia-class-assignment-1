@@ -1,0 +1,10 @@
+File,Current Memory (MB),Peak Memory (MB),Elapsed Time (seconds),Result Length,Result
+1,0.15492916107177734,6.847136497497559,189.78116273880005,5,"['sao_paulo', 'salvador', 'salvador', 'sao_paulo', 'manaus']"
+2,0.15747928619384766,31.8993501663208,2337.1101417541504,4,"['sao_paulo', 'salvador', 'salvador', 'manaus']"
+3,0.15869140625,38.64053153991699,2048.5180315971375,9,"['sao_paulo', 'belo_horizonte', 'salvador', 'salvador', 'cuiaba', 'porto_velho', 'rio_de_janeiro', 'rio_branco', 'manaus']"
+4,0.1557760238647461,85.4264144897461,4271.138559818268,6,"['sao_paulo', 'porto_velho', 'maceio', 'salvador', 'salvador', 'manaus']"
+5,0.15770339965820312,85.4264144897461,129.41040706634521,8,"['sao_paulo', 'porto_velho', 'salvador', 'salvador', 'recife', 'campo_grande', 'natal', 'manaus']"
+6,0.1585369110107422,85.4264144897461,64.39008831977844,7,"['sao_paulo', 'recife', 'salvador', 'salvador', 'recife', 'sao_paulo', 'manaus']"
+7,0.15923786163330078,85.4264144897461,2612.968765735626,5,"['sao_paulo', 'maceio', 'fortaleza', 'brasilia', 'salvador']"
+8,0.15987205505371094,85.4264144897461,241.1207857131958,3,"['sao_paulo', 'brasilia', 'salvador']"
+9,0.16048622131347656,85.4264144897461,772.6007165908813,7,"['sao_paulo', 'porto_velho', 'salvador', 'salvador', 'cuiaba', 'rio_de_janeiro', 'manaus']"
