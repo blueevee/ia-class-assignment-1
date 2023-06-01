@@ -1,0 +1,13 @@
+File,Current Memory (MB),Peak Memory (MB),Elapsed Time (seconds),Result Length,Result
+40,0.43651771545410156,0.9217901229858398,2.6118197441101074,9,"['sao_paulo', 'fortaleza', 'natal', 'natal', 'salvador', 'recife', 'sao_paulo', 'fortaleza', 'manaus']"
+41,0.3248405456542969,1.6260223388671875,2.7083959579467773,9,"['sao_paulo', 'joao_pessoa', 'rio_de_janeiro', 'fortaleza', 'natal', 'natal', 'joao_pessoa', 'rio_de_janeiro', 'manaus']"
+42,0.33568572998046875,4.194458961486816,2.1430623531341553,5,"['sao_paulo', 'natal', 'natal', 'belo_horizonte', 'manaus']"
+43,0.3490867614746094,4.194458961486816,2.35208797454834,14,"['sao_paulo', 'belo_horizonte', 'manaus', 'recife', 'salvador', 'natal', 'natal', 'salvador', 'recife', 'joao_pessoa', 'fortaleza', 'sao_paulo', 'belo_horizonte', 'manaus']"
+44,0.35770511627197266,4.194458961486816,2.854274272918701,11,"['sao_paulo', 'belo_horizonte', 'manaus', 'fortaleza', 'rio_de_janeiro', 'recife', 'natal', 'natal', 'fortaleza', 'belo_horizonte', 'manaus']"
+45,0.3782815933227539,4.194458961486816,3.3268699645996094,12,"['sao_paulo', 'salvador', 'belo_horizonte', 'recife', 'manaus', 'fortaleza', 'natal', 'natal', 'fortaleza', 'joao_pessoa', 'recife', 'manaus']"
+46,0.37644481658935547,4.194458961486816,2.7040598392486572,11,"['sao_paulo', 'recife', 'salvador', 'natal', 'natal', 'joao_pessoa', 'sao_paulo', 'recife', 'salvador', 'fortaleza', 'manaus']"
+47,0.5171089172363281,4.194458961486816,2.5697431564331055,10,"['sao_paulo', 'rio_de_janeiro', 'recife', 'natal', 'natal', 'sao_paulo', 'rio_de_janeiro', 'recife', 'fortaleza', 'manaus']"
+48,0.38024330139160156,12.874299049377441,2.1811094284057617,6,"['sao_paulo', 'natal', 'natal', 'sao_paulo', 'rio_de_janeiro', 'manaus']"
+49,0.3966503143310547,12.874299049377441,2.1618192195892334,8,"['sao_paulo', 'recife', 'fortaleza', 'rio_de_janeiro', 'natal', 'natal', 'joao_pessoa', 'manaus']"
+50,0.3716163635253906,12.874299049377441,2.8975796699523926,14,"['sao_paulo', 'salvador', 'fortaleza', 'joao_pessoa', 'recife', 'natal', 'natal', 'salvador', 'fortaleza', 'sao_paulo', 'joao_pessoa', 'recife', 'belo_horizonte', 'manaus']"
+51,0.5437345504760742,12.874299049377441,2.9129345417022705,5,"['sao_paulo', 'natal', 'natal', 'sao_paulo', 'manaus']"

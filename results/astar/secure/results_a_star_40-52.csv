@@ -1,0 +1,13 @@
+File,Current Memory (MB),Peak Memory (MB),Elapsed Time (seconds),Result Length,Result
+40,0.31389331817626953,0.8172225952148438,2.7410788536071777,5,"['sao_paulo', 'fortaleza', 'natal', 'natal', 'manaus']"
+41,0.3464498519897461,0.8341054916381836,2.6816940307617188,8,"['sao_paulo', 'natal', 'natal', 'joao_pessoa', 'sao_paulo', 'fortaleza', 'rio_de_janeiro', 'manaus']"
+42,0.5140171051025391,1.631892204284668,2.92101788520813,5,"['sao_paulo', 'natal', 'natal', 'sao_paulo', 'manaus']"
+43,0.35399723052978516,1.701385498046875,4.628581762313843,7,"['sao_paulo', 'fortaleza', 'salvador', 'natal', 'natal', 'recife', 'manaus']"
+44,0.3565244674682617,1.701385498046875,3.76491379737854,8,"['sao_paulo', 'belo_horizonte', 'fortaleza', 'natal', 'natal', 'fortaleza', 'belo_horizonte', 'manaus']"
+45,0.37297821044921875,1.701385498046875,5.160149335861206,6,"['sao_paulo', 'recife', 'natal', 'natal', 'fortaleza', 'manaus']"
+46,0.38099002838134766,1.701385498046875,2.8083088397979736,9,"['sao_paulo', 'recife', 'natal', 'natal', 'salvador', 'fortaleza', 'recife', 'rio_de_janeiro', 'manaus']"
+47,0.4015665054321289,1.701385498046875,4.085753440856934,6,"['sao_paulo', 'natal', 'natal', 'recife', 'fortaleza', 'manaus']"
+48,0.408050537109375,1.701385498046875,3.282374143600464,7,"['sao_paulo', 'natal', 'natal', 'belo_horizonte', 'fortaleza', 'rio_de_janeiro', 'manaus']"
+49,0.3941917419433594,12.9048433303833,2.16093373298645,6,"['sao_paulo', 'rio_de_janeiro', 'natal', 'natal', 'fortaleza', 'manaus']"
+50,0.3982410430908203,12.9048433303833,3.144969940185547,5,"['sao_paulo', 'salvador', 'natal', 'natal', 'manaus']"
+51,0.5499000549316406,12.9048433303833,2.564450263977051,6,"['sao_paulo', 'natal', 'natal', 'rio_de_janeiro', 'belo_horizonte', 'manaus']"

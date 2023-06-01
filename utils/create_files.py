@@ -2,24 +2,15 @@ import os
 import random
 
 cities = [
-    "rio_de_janeiro",
-    "sao_paulo",
-    "belo_horizonte",
     "salvador",
+    "sao_paulo",
+    "manaus",
+    "rio_de_janeiro",
+    "belo_horizonte",
     "fortaleza",
     "recife",
     "natal",
-    "joao_pessoa",
-    "maceio",
-    "aracaju",
-    "brasilia",
-    "cuiaba",
-    "campo_grande",
-    "goiania",
-    "palmas",
-    "manaus",
-    "porto_velho",
-    "rio_branco"
+    "joao_pessoa"
 ]
 
 def selectCities(citiesArray):
@@ -38,14 +29,20 @@ def generate_random_data():
     return distance, vel, risk, timeElapsed
 
 def generate_connection(totalCities, connected_cities):
-    city1 = random.choice(totalCities)
+    selectedCities = []
+    for city in totalCities:
+        if not connected_cities.get(city, False):
+            selectedCities.append(city)
+    selectedCities = selectedCities if len(selectedCities) > 0 else totalCities
+
+    city1 = random.choice(selectedCities)
     city2 = random.choice(totalCities)
 
-    while city1 in connected_cities and len(connected_cities[city1]) == len(totalCities) - 1:
-        city1 = random.choice(totalCities)
-
-    while city2 == city1:
+    while city2 == city1 or city2 in connected_cities.get('city1', []) or city1 in (connected_cities.get('city2', [])):
         city2 = random.choice(totalCities)
+
+    while city1 in connected_cities and len(connected_cities[city1]) == len(totalCities) - 1:
+        city1 = random.choice(selectedCities)
 
     return city1, city2
 
@@ -68,12 +65,19 @@ for i in range(1, 101):
             initial_city, final_city = generate_connection(totalCities, connected_cities)
             distance, max_speed, risk_level, timeElapsed = generate_random_data()
             f.write(f"aresta({initial_city}, {final_city}, {distance}, {max_speed}, {risk_level}, {timeElapsed}).\n")
+            # f.write(f"aresta({final_city}, {initial_city}, {distance}, {max_speed}, {risk_level}, {timeElapsed}).\n")
             
             if initial_city in connected_cities:
                 connected_cities[initial_city].add(final_city)
             else:
                 connected_cities[initial_city] = {final_city}
-                
+            
+            # if final_city in connected_cities:
+            #     connected_cities[final_city].add(initial_city)
+            # else:
+            #     connected_cities[final_city] = {initial_city}
+
+
         f.write("\n")
         for cidade in totalCities:
             latitude, longitude = generate_random_coordinates()

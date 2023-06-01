@@ -16,7 +16,7 @@ def exec_best_path(i, alg, initial_city, final_city, path_choice):
     
 
 
-def hundred_maps(alg, uber_city, passenger_city, destiny_city, path_choice):
+def hundred_maps(alg, uber_city, passenger_city, destiny_city, path_choice, start, end):
     """
     Realiza 100 execuções em mapas diferentes com o algoritmo passado para encontrar o melhor caminho entre 2 cidades, cria um arquivo no diretório local contendo 'Memória atual (MB)', 'Pico de memória(MB)', 'Tempo gasto (segundos)', 'Comprimento do caminho', 'Lista de cidades do caminho' para cada mapa executado.
 
@@ -34,12 +34,9 @@ def hundred_maps(alg, uber_city, passenger_city, destiny_city, path_choice):
 
     # Iniciando tracking de mémoria
     tracemalloc.start()
+    lines = []
 
-    csv_file = open(f'results_{alg}.csv', 'w', newline='')
-    csv_writer = csv.writer(csv_file)
-    csv_writer.writerow(['File', 'Current Memory (MB)', 'Peak Memory (MB)', 'Elapsed Time (seconds)', 'Result Length', 'Result'])
-
-    for i in range(1, 101):
+    for i in range(start, end):
         start_time = time.time()
         
         toPassengerBestResult, toPassengerResultLen = exec_best_path(i, alg, uber_city, passenger_city, Preference.FAST.value)
@@ -56,11 +53,16 @@ def hundred_maps(alg, uber_city, passenger_city, destiny_city, path_choice):
 
         end_time = time.time()
         elapsed_time = end_time - start_time
-
-        csv_writer.writerow([i, current_memory, peak_memory, elapsed_time, finalResultLen, finalBestResult])
+        
+        lines.append([i, current_memory, peak_memory, elapsed_time, finalResultLen, finalBestResult])
         print(f"ENCONTROU O MELHOR CAMINHO PARA O MAPA: {i}")
 
+    csv_file = open(f'results_{alg}_{start}-{end}.csv', 'w', newline='')
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(['File', 'Current Memory (MB)', 'Peak Memory (MB)', 'Elapsed Time (seconds)', 'Result Length', 'Result'])
+    csv_writer.writerows(lines)
     csv_file.close()
+    print(f"FIM {end}")
 
 def best_path(alg, city_map, initial_city, final_city, path_choice):
     """
